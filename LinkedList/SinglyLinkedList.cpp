@@ -4,11 +4,11 @@ using namespace std;
 class Node
 {
 public:
-    int data;
+    int val;
     Node *next;
 
-    Node(int val){ // Constructor
-        data = val;
+    Node(int data){ // Constructor
+        val = data;
         next = NULL;
     }
 };
@@ -118,7 +118,7 @@ public:
 
         while (temp != NULL)
         {
-            if(temp->data == val){
+            if(temp->val == val){
                 return index;
             }
 
@@ -140,7 +140,7 @@ public:
         Node *temp = head;
         while (temp != NULL)
         {
-            cout << temp->data << " -> ";
+            cout << temp->val << " -> ";
             temp = temp->next;
         }
         cout << "NULL" << endl;
