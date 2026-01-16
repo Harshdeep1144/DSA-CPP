@@ -1,19 +1,16 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void insertionSort(vector<int> &arr){
+void ShellSort(vector<int> &arr){
     int n = arr.size();
 
-    for(int i = 1; i < n; i++){
-        int key = arr[i];
-        int j = i-1;        // For Previous values
-
-        while(arr[j] > key && j >= 0){
-            arr[j+1] = arr[j];
-            j--;
+    for(int gap = n/2; gap > 0; gap = gap/2){
+        for(int  i = gap;  i < n; i++){
+            int temp = arr[i];
+            for(int j = i; j >= gap && arr[j-gap] > temp; j = j-gap){
+                swap(arr[j], arr[j-gap]);
+            }
         }
-
-        arr[j+1] = key;
     }
 }
 
@@ -29,7 +26,7 @@ void display(vector<int> &arr){
 int main(){
     vector<int> nums = {3,5,6,0,25,1};
 
-    insertionSort(nums);
+    ShellSort(nums);
     display(nums);
     
     return 0;
