@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/harsh/OneDrive/VS Code Files/DSA In C++",
-      "program": "c:/Users/harsh/OneDrive/VS Code Files/DSA In C++/build/Debug/outDebug",
+      "cwd": "c:/Users/harsh/OneDrive/VS Code Files/DSA In C++/STL",
+      "program": "c:/Users/harsh/OneDrive/VS Code Files/DSA In C++/STL/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
